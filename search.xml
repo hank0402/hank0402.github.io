@@ -58,4 +58,20 @@ class="math inline">\(k\)</span> 条边后不同的点的个数。</p>
 比较小，所以直接分类讨论，对于每种情况统计答案。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
+  <entry>
+    <title>关于赛时暴力打法的一些总结</title>
+    <url>/2023/10/14/%E5%85%B3%E4%BA%8E%E8%B5%9B%E6%97%B6%E6%9A%B4%E5%8A%9B%E6%89%93%E6%B3%95%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="6c229398b3de15ff6c8624bdf3d154a47fd12e662a77ad41740d4e45d3c394ca">846ad8ec6e6943494449754732cecabb3704fbdcb76d3728168f8743718907bffb8de7ea1e9806b11d73a0a73f7be1c5c6259adf35a1177045db136443bf0d73644603d62ed59ac12a113f8a6980d7ab3ca14a4a8e6d6e1a30d115e430cb361724a27bde6e3ea04fd5cbb7e5963e4caa047f31bad50dbedd066432f5b35dcbe63d686009532a7661be6baaf4e9f1bc11d956984629adf343457707d1919674da7f0f094e47f4e069db6eaaaa5aea5020e30d43f5febb729b8243645d041aa02388040418c2bbbf6e6c6c857664724b6b9da1f5f7f42b575b80906c924c3f80e7591da672c4c55e58ad8e876b5092c108d4dc9704b38ac1cd6f1dac95650699e317a65b69fa78e5278a23ebdd9ba3d667b10086b504d2740d3b18ef9c89d88953366c16e926223a1f07c31b6789f329cb2396e6fe6b1bd10da96e542ab498b64101b907d87e5e55392045e16bd820d4aaee8c86753cc36ecea4565b954a03fa5f84c9b49b8f20854b6151f4faf442ea052c856b768cc585584d84909e321d8cc32c1e7cb059de7932297e564a051f6c54dc88257eb9b28886b689f91c74637dea143889e33970084291cc6357a16060b3d5404ac15b11e251e3a6280002d2b6a2152c99609ff26495705f25f9385d4d16de5962a5f6cb1bfa0d2557d912a049c9e20531fd4c595fa4470cc44148b0e15fda9277eeb5955716c9a113a8b23e24b10ba80b7099d8ae3aaef8789c22b5944c09d50cafde6f5d8a7f5102fe29580409c1147b926ea36e31d195b4b256cd6d67fa50c7f7b478375826acd494bceec3d342464eeda71a68d30941b490efbc4d60a38360d778b381fed0e2a9f951d4ee12605cb76d596712d600faf9661bb174f05545b00f6792b66e3d6d301cf805b5c9f0434f5cd4c11e79bd9442d7abd2c35c2a6ead5be773a5632575bac00cd46ab4ca70c51b0e8ca570be2c8c964d051d592be23f689a5b989fe6c7c9f361cd2e64ad5f2c971468287b5d9553df7fed4140e4179b4b7aafdc41840eadf1e21ef5d4652bb36939579fbb351a29ae5c356cab85018e147300ce02388e01f6f3481ef886e6f1dbe213346a74fa590a9a3d9cae8a360112458ebcacfde2ed3bb7cd857605758399a13f0c22fd8b95d9b2a7c11773cfa0bc38dae01a8d8cb32678d994316bcac13c30ec1bed80dd9f2cf582b931237c40a1e05339f6293a376d6a5cc767bfe6b857948fd0906a3846fe5b6dcd93b993bccc8efd512be47ec82ce175421b2822b045a9bd958c3309d3e7e9d8423b72077f0839c3ff7271185aa53be4ef927ca6e450ba94d9f90fd23ef096f279a6a4baf9809be9909532953f1ff230e6239de0c1c4e2ffa3c44d249c444c6055e4abab41fbf6f48be8ed69c2ffc815181d22667a1b017717cc461cd7342fb4a0343035c71a46494a5284211904d69ad5004ae41531d08b613e474bf9c43153d5bb3e775f4a25518c3cfae1ee0ce782e828f80ce6af0daf24836f327921a406f2218431c56ae4874b0ae4d18abfdf60382679ef04f5bc04ab2d0db3ad90d674e534bcf0a5a3d866f5c5002e214e4a7b1efc34af800c1f70d087fcb849b528efb1d69d51c37b19c9f8c695d6cdcc2f50b0a1c23d640a87008c7a536ff7ed88a6331d717635387b0766a5b9400e7164964eb290ee92ffdaa05fe4fc7117dcc51566fa</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">在这里输入</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+  </entry>
 </search>
