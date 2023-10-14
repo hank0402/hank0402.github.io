@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>2023/10/13 模拟赛</title>
+    <url>/2023/10/14/2023-10-13-%E6%A8%A1%E6%8B%9F%E8%B5%9B/</url>
+    <content><![CDATA[<h1 id="div2-a.-clock">Div2 A. clock</h1>
+<p>脑瘫题。但是我零零散散写了 100min。/tuu</p>
+<p>显然有一种方式是对于每一组数据，枚举答案，根据时针、分针、秒针的移动速度，算出角度，然后判断对不对。
+<span id="more"></span></p>
+<p>但是我的写法对于分数加减要算一个 <span
+class="math inline">\(\log\)</span> 复杂度的 <span
+class="math inline">\(\gcd\)</span>，这样刚好会 T。</p>
+<p>所以说就进行预处理，我使用了 <code>unordered_map</code> 对
+<code>string</code> 到 <code>vector&lt;string&gt;</code>
+进行映射来预处理。</p>
+<p>写了大概 <span class="math inline">\(100\)</span>
+行。这是不好的。</p>
+<p>正解的话可以把每个分数乘以 <span class="math inline">\(120\)</span>
+因为最小的单位是时针每秒走的 <span
+class="math inline">\(\frac{1}{120}\)</span> 度。</p>
+<p>然后三四十行就能搞定。</p>
+<h1 id="div2-b.-chess">Div2 B. chess</h1>
+<p>水题。</p>
+<p>稍微想一想可以得出某个点可以被反色当且仅当周围的点和他颜色相同。</p>
+<p>不然会影响到之前的点。</p>
+<p>统计一下这些点，快速幂算 <span class="math inline">\(2^{cnt}\)</span>
+即可。</p>
+<p>这题大概写了 20min。</p>
+<h1 id="div2-c.-sequence">Div2 C. sequence</h1>
+<p>好题。</p>
+<p>赛时连最拉的 dp 都没想到写了个 20
+分最低档还交错代码。要反省一下。</p>
+<p>首先想到如果填完了 <span class="math inline">\(1\sim i\)</span>
+位，要填下一位的话，只和 <span class="math inline">\(i,i-1,i-2\)</span>
+有关，所以把后两位不知道的值记在状态里，转移就好了。</p>
+<p>关于这方面 <span class="math inline">\(dp\)</span>
+的小优化，可以使用前缀和，把转移方程中的两部分和分开算，可以优化掉一个
+<span class="math inline">\(O(n)\)</span>。</p>
+<p>对于正解，我们发现只有最大值会有影响，所以我们把最大值以及最大值在哪一位记录下来，便可以把状态数优化到
+<span class="math inline">\(O(n^2)\)</span>。</p>
+<p>然后转移本来是 <span class="math inline">\(O(n^3)\)</span>
+的，通过差分+前缀和可以优化到 <span
+class="math inline">\(O(n^2)\)</span> 的复杂度。</p>
+<h1 id="div2-d.-graph">Div2 D. graph</h1>
+<p>好题。</p>
+<p>赛时写了一个最低档 10 分，输输输。</p>
+<p>其实可以拆贡献，它要求一个 <span class="math inline">\(\sum
+|S|^k\)</span>。</p>
+<p>把 <span class="math inline">\((1+1+\cdots+1)^k\)</span> 展开，每个
+<span class="math inline">\(k\)</span> 个 <span
+class="math inline">\(1\)</span>
+相乘在原集合对应的东西，考虑枚举集合中的 <span
+class="math inline">\(k\)</span> 个元素，对应的贡献为 <span
+class="math inline">\(2^{n-c}\)</span>，<span
+class="math inline">\(c\)</span> 为不同的元素个数，即枚举 <span
+class="math inline">\(k\)</span> 条边后不同的点的个数。</p>
+<p>注意到 <span class="math inline">\(k\)</span>
+比较小，所以直接分类讨论，对于每种情况统计答案。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+</search>
