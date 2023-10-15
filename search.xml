@@ -74,4 +74,74 @@ class="math inline">\(k\)</span> 条边后不同的点的个数。</p>
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
   </entry>
+  <entry>
+    <title>2023/10/15 刷题记录</title>
+    <url>/2023/10/15/2023-10-15-%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<h2 id="acwing-97.-约数之和">Acwing 97. 约数之和</h2>
+<p>首先看到约数之和，应该条件反射到约数和定理，大概是若要求 <span
+class="math inline">\(\sigma(x)\)</span>，<span
+class="math inline">\(x\)</span> 可以表示为 <span
+class="math inline">\(\prod_{i=1}^k p_i^{a_i}\)</span>，那么 <span
+class="math inline">\(\sigma(x)=\prod_{i=1}^k \left(\sum_{j=0}^{a_i}
+p_i^j\right)\)</span>。</p>
+<p>所以我们要求 <span class="math inline">\(a^b\)</span>
+的质因数分解，只要求 <span class="math inline">\(a\)</span>
+的分解，然后把每一项的指数乘上 <span class="math inline">\(b\)</span>
+就可以得到 <span class="math inline">\(a^b\)</span> 的质因数分解。
+<span id="more"></span></p>
+<p>然后对于 <span
+class="math inline">\((1+p+p^2+\cdots+p^x)\)</span>，可以使用标准的等比数列公式，但是由于模数
+<span class="math inline">\(9901\)</span> 比较小，直接分治即可。</p>
+<h2 id="acwing-109.-天才-acm">Acwing 109. 天才 ACM</h2>
+<p>看到校验值的定义，应该想到如何快速求这个最优值。</p>
+<p>我们想到，如果有 <span
+class="math inline">\(0&lt;a&lt;b&lt;c&lt;d\)</span>，显然有 <span
+class="math inline">\((a-d)^2+(b-c)^2&gt;(a-b)^2+(c-d)^2\)</span>
+以及其他的任何一种取法，拆了括号后易证。</p>
+<p>所以校验值的最优取法就是不断取出最大值和最小值。</p>
+<p>一开始我想到了二分，但是加入一个点后，这个校验值难以更新，复杂度高，所以不可取。</p>
+<p>所以考虑知道了一个左端点，求最多能延申到那个点。</p>
+<p>这里可以选择倍增，但是不能直接使用快排，要在加入一些点时使用归并。</p>
+<h2 id="acwing-119.-给树染色">Acwing 119. 给树染色</h2>
+<p>首先，如果染色没有限制，一定先选权值最大的点染色。</p>
+<p>但是如果以最优方案选了一个点，他的权值最大的儿子应该立即被染，否则不优。</p>
+<p>那么我们就考虑一个点 <span class="math inline">\(x\)</span>，<span
+class="math inline">\(x\)</span> 的最大儿子 <span
+class="math inline">\(y\)</span>，以及另一个点 <span
+class="math inline">\(z\)</span>。</p>
+<p>我们现在就是考虑先染 <span class="math inline">\(x,y\)</span>
+还是先染 <span class="math inline">\(z\)</span>。</p>
+<p>如果先染前者，那么有：<span
+class="math inline">\(x+2y+3z&lt;z+2x+3y\)</span> ，即 <span
+class="math inline">\(\dfrac{x+y}{2}&gt;z\)</span>。</p>
+<p>我们发现 这两项都是平均值的形式，并且我们进一步推广，可以发现一组点
+<span class="math inline">\(A\)</span> 比一组点 <span
+class="math inline">\(B\)</span></p>
+<p>先染，要满足 <span
+class="math inline">\(\dfrac{sumval_A}{|A|}&gt;\dfrac{sumval_B}{B}\)</span>。</p>
+<p>所以我们如果在现有的点中得出了某一组点要先染，我们就可以把他合并到他父亲上，然后变成一个大点。</p>
+<p>一直合并之后，我们发现答案不是很好求，所以我们可以考虑在合并的过程中计算答案。</p>
+<h2 id="acwing-91.-最短哈密尔顿路径">Acwing 91. 最短哈密尔顿路径</h2>
+<p>考虑到 <span class="math inline">\(n\leq 20\)</span>，所以记 <span
+class="math inline">\(f_{S,i}\)</span>
+表示经过了的点的集合与目前所在的点，<span
+class="math inline">\(O(2^n\times n^2)\)</span> 转移即可。</p>
+<h2 id="acwing-120.-防线">Acwing 120. 防线</h2>
+<p>考虑到只有一位是奇数，那么在这一位之前所有的前缀和都是偶数，在这一位之后的所有前缀和都是奇数，一看到这种
+<code>000001111</code>
+的形式，就要想到二分，而我们判断一段前缀内的被等差数列覆盖的个数总和是很好求的，复杂度
+<span class="math inline">\(O(n)\)</span>，所以加上二分总复杂度为 <span
+class="math inline">\(O(n\log n)\)</span>。</p>
+<h2 id="acwing-123.-士兵">Acwing 123. 士兵</h2>
+<p>首先注意到每次操作会让某一个 <span class="math inline">\(x\)</span>
+或某一个 <span class="math inline">\(y\)</span> 加一或者减一，我们考虑将
+<span class="math inline">\(x\)</span>，<span
+class="math inline">\(y\)</span> 分开来看，因为 他们之间没有影响。</p>
+<p>最终要求 <span class="math inline">\(y\)</span> 相同，<span
+class="math inline">\(x\)</span>
+相邻，首先算使某一个数列变相同的办法就是直接排序之后算中位数，但是这个相邻比较难搞，所以我们直接排序了之后在下标为
+<span class="math inline">\(i\)</span> 的数减去 <span
+class="math inline">\(i\)</span>，然后转换成变成相同，但是注意这之前要先排序，不然不会最优。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
 </search>

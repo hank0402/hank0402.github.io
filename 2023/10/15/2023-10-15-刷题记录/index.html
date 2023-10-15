@@ -19,27 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="请输入密码">
+    <meta name="description" content="Acwing 97. 约数之和 首先看到约数之和，应该条件反射到约数和定理，大概是若要求 \(\sigma(x)\)，\(x\) 可以表示为 \(\prod_{i&#x3D;1}^k p_i^{a_i}\)，那么 \(\sigma(x)&#x3D;\prod_{i&#x3D;1}^k \left(\sum_{j&#x3D;0}^{a_i} p_i^j\right)\)。 所以我们要求 \(a^b\) 的质因数分解，只要求 \(a">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于赛时暴力打法的一些总结">
-<meta property="og:url" content="http://example.com/2023/10/14/%E5%85%B3%E4%BA%8E%E8%B5%9B%E6%97%B6%E6%9A%B4%E5%8A%9B%E6%89%93%E6%B3%95%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:title" content="2023&#x2F;10&#x2F;15 刷题记录">
+<meta property="og:url" content="http://example.com/2023/10/15/2023-10-15-%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="hank0402">
-<meta property="og:description" content="请输入密码">
+<meta property="og:description" content="Acwing 97. 约数之和 首先看到约数之和，应该条件反射到约数和定理，大概是若要求 \(\sigma(x)\)，\(x\) 可以表示为 \(\prod_{i&#x3D;1}^k p_i^{a_i}\)，那么 \(\sigma(x)&#x3D;\prod_{i&#x3D;1}^k \left(\sum_{j&#x3D;0}^{a_i} p_i^j\right)\)。 所以我们要求 \(a^b\) 的质因数分解，只要求 \(a">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-10-14T12:36:56.000Z">
-<meta property="article:modified_time" content="2023-10-14T12:56:07.288Z">
+<meta property="article:published_time" content="2023-10-15T10:30:42.000Z">
+<meta property="article:modified_time" content="2023-10-15T11:58:39.224Z">
 <meta property="article:author" content="hank0402">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2023/10/14/%E5%85%B3%E4%BA%8E%E8%B5%9B%E6%97%B6%E6%9A%B4%E5%8A%9B%E6%89%93%E6%B3%95%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/">
+<link rel="canonical" href="http://example.com/2023/10/15/2023-10-15-%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/10/14/%E5%85%B3%E4%BA%8E%E8%B5%9B%E6%97%B6%E6%9A%B4%E5%8A%9B%E6%89%93%E6%B3%95%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/","path":"2023/10/14/关于赛时暴力打法的一些总结/","title":"关于赛时暴力打法的一些总结"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2023/10/15/2023-10-15-%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/","path":"2023/10/15/2023-10-15-刷题记录/","title":"2023/10/15 刷题记录"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>关于赛时暴力打法的一些总结 | hank0402</title>
+<title>2023/10/15 刷题记录 | hank0402</title>
   
 
 
@@ -129,7 +129,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -142,6 +142,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#acwing-97.-%E7%BA%A6%E6%95%B0%E4%B9%8B%E5%92%8C"><span class="nav-number">1.</span> <span class="nav-text">Acwing 97. 约数之和</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#acwing-109.-%E5%A4%A9%E6%89%8D-acm"><span class="nav-number">2.</span> <span class="nav-text">Acwing 109. 天才 ACM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#acwing-119.-%E7%BB%99%E6%A0%91%E6%9F%93%E8%89%B2"><span class="nav-number">3.</span> <span class="nav-text">Acwing 119. 给树染色</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#acwing-91.-%E6%9C%80%E7%9F%AD%E5%93%88%E5%AF%86%E5%B0%94%E9%A1%BF%E8%B7%AF%E5%BE%84"><span class="nav-number">4.</span> <span class="nav-text">Acwing 91. 最短哈密尔顿路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#acwing-120.-%E9%98%B2%E7%BA%BF"><span class="nav-number">5.</span> <span class="nav-text">Acwing 120. 防线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#acwing-123.-%E5%A3%AB%E5%85%B5"><span class="nav-number">6.</span> <span class="nav-text">Acwing 123. 士兵</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -193,7 +194,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/14/%E5%85%B3%E4%BA%8E%E8%B5%9B%E6%97%B6%E6%9A%B4%E5%8A%9B%E6%89%93%E6%B3%95%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/15/2023-10-15-%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -206,12 +207,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="关于赛时暴力打法的一些总结 | hank0402">
+      <meta itemprop="name" content="2023/10/15 刷题记录 | hank0402">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          关于赛时暴力打法的一些总结
+          2023/10/15 刷题记录
         </h1>
 
         <div class="post-meta-container">
@@ -223,7 +224,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2023-10-14 20:36:56 / 修改时间：20:56:07" itemprop="dateCreated datePublished" datetime="2023-10-14T20:36:56+08:00">2023-10-14</time>
+      <time title="创建时间：2023-10-15 18:30:42 / 修改时间：19:58:39" itemprop="dateCreated datePublished" datetime="2023-10-15T18:30:42+08:00">2023-10-15</time>
     </span>
 
   
@@ -235,18 +236,72 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="6c229398b3de15ff6c8624bdf3d154a47fd12e662a77ad41740d4e45d3c394ca">846ad8ec6e6943494449754732cecabb3704fbdcb76d3728168f8743718907bffb8de7ea1e9806b11d73a0a73f7be1c5c6259adf35a1177045db136443bf0d73644603d62ed59ac12a113f8a6980d7ab3ca14a4a8e6d6e1a30d115e430cb361724a27bde6e3ea04fd5cbb7e5963e4caa047f31bad50dbedd066432f5b35dcbe63d686009532a7661be6baaf4e9f1bc11d956984629adf343457707d1919674da7f0f094e47f4e069db6eaaaa5aea5020e30d43f5febb729b8243645d041aa02388040418c2bbbf6e6c6c857664724b6b9da1f5f7f42b575b80906c924c3f80e7591da672c4c55e58ad8e876b5092c108d4dc9704b38ac1cd6f1dac95650699e317a65b69fa78e5278a23ebdd9ba3d667b10086b504d2740d3b18ef9c89d88953366c16e926223a1f07c31b6789f329cb2396e6fe6b1bd10da96e542ab498b64101b907d87e5e55392045e16bd820d4aaee8c86753cc36ecea4565b954a03fa5f84c9b49b8f20854b6151f4faf442ea052c856b768cc585584d84909e321d8cc32c1e7cb059de7932297e564a051f6c54dc88257eb9b28886b689f91c74637dea143889e33970084291cc6357a16060b3d5404ac15b11e251e3a6280002d2b6a2152c99609ff26495705f25f9385d4d16de5962a5f6cb1bfa0d2557d912a049c9e20531fd4c595fa4470cc44148b0e15fda9277eeb5955716c9a113a8b23e24b10ba80b7099d8ae3aaef8789c22b5944c09d50cafde6f5d8a7f5102fe29580409c1147b926ea36e31d195b4b256cd6d67fa50c7f7b478375826acd494bceec3d342464eeda71a68d30941b490efbc4d60a38360d778b381fed0e2a9f951d4ee12605cb76d596712d600faf9661bb174f05545b00f6792b66e3d6d301cf805b5c9f0434f5cd4c11e79bd9442d7abd2c35c2a6ead5be773a5632575bac00cd46ab4ca70c51b0e8ca570be2c8c964d051d592be23f689a5b989fe6c7c9f361cd2e64ad5f2c971468287b5d9553df7fed4140e4179b4b7aafdc41840eadf1e21ef5d4652bb36939579fbb351a29ae5c356cab85018e147300ce02388e01f6f3481ef886e6f1dbe213346a74fa590a9a3d9cae8a360112458ebcacfde2ed3bb7cd857605758399a13f0c22fd8b95d9b2a7c11773cfa0bc38dae01a8d8cb32678d994316bcac13c30ec1bed80dd9f2cf582b931237c40a1e05339f6293a376d6a5cc767bfe6b857948fd0906a3846fe5b6dcd93b993bccc8efd512be47ec82ce175421b2822b045a9bd958c3309d3e7e9d8423b72077f0839c3ff7271185aa53be4ef927ca6e450ba94d9f90fd23ef096f279a6a4baf9809be9909532953f1ff230e6239de0c1c4e2ffa3c44d249c444c6055e4abab41fbf6f48be8ed69c2ffc815181d22667a1b017717cc461cd7342fb4a0343035c71a46494a5284211904d69ad5004ae41531d08b613e474bf9c43153d5bb3e775f4a25518c3cfae1ee0ce782e828f80ce6af0daf24836f327921a406f2218431c56ae4874b0ae4d18abfdf60382679ef04f5bc04ab2d0db3ad90d674e534bcf0a5a3d866f5c5002e214e4a7b1efc34af800c1f70d087fcb849b528efb1d69d51c37b19c9f8c695d6cdcc2f50b0a1c23d640a87008c7a536ff7ed88a6331d717635387b0766a5b9400e7164964eb290ee92ffdaa05fe4fc7117dcc51566fa</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">在这里输入</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+    <div class="post-body" itemprop="articleBody"><h2 id="acwing-97.-约数之和">Acwing 97. 约数之和</h2>
+<p>首先看到约数之和，应该条件反射到约数和定理，大概是若要求 <span
+class="math inline">\(\sigma(x)\)</span>，<span
+class="math inline">\(x\)</span> 可以表示为 <span
+class="math inline">\(\prod_{i=1}^k p_i^{a_i}\)</span>，那么 <span
+class="math inline">\(\sigma(x)=\prod_{i=1}^k \left(\sum_{j=0}^{a_i}
+p_i^j\right)\)</span>。</p>
+<p>所以我们要求 <span class="math inline">\(a^b\)</span>
+的质因数分解，只要求 <span class="math inline">\(a\)</span>
+的分解，然后把每一项的指数乘上 <span class="math inline">\(b\)</span>
+就可以得到 <span class="math inline">\(a^b\)</span> 的质因数分解。
+<span id="more"></span></p>
+<p>然后对于 <span
+class="math inline">\((1+p+p^2+\cdots+p^x)\)</span>，可以使用标准的等比数列公式，但是由于模数
+<span class="math inline">\(9901\)</span> 比较小，直接分治即可。</p>
+<h2 id="acwing-109.-天才-acm">Acwing 109. 天才 ACM</h2>
+<p>看到校验值的定义，应该想到如何快速求这个最优值。</p>
+<p>我们想到，如果有 <span
+class="math inline">\(0&lt;a&lt;b&lt;c&lt;d\)</span>，显然有 <span
+class="math inline">\((a-d)^2+(b-c)^2&gt;(a-b)^2+(c-d)^2\)</span>
+以及其他的任何一种取法，拆了括号后易证。</p>
+<p>所以校验值的最优取法就是不断取出最大值和最小值。</p>
+<p>一开始我想到了二分，但是加入一个点后，这个校验值难以更新，复杂度高，所以不可取。</p>
+<p>所以考虑知道了一个左端点，求最多能延申到那个点。</p>
+<p>这里可以选择倍增，但是不能直接使用快排，要在加入一些点时使用归并。</p>
+<h2 id="acwing-119.-给树染色">Acwing 119. 给树染色</h2>
+<p>首先，如果染色没有限制，一定先选权值最大的点染色。</p>
+<p>但是如果以最优方案选了一个点，他的权值最大的儿子应该立即被染，否则不优。</p>
+<p>那么我们就考虑一个点 <span class="math inline">\(x\)</span>，<span
+class="math inline">\(x\)</span> 的最大儿子 <span
+class="math inline">\(y\)</span>，以及另一个点 <span
+class="math inline">\(z\)</span>。</p>
+<p>我们现在就是考虑先染 <span class="math inline">\(x,y\)</span>
+还是先染 <span class="math inline">\(z\)</span>。</p>
+<p>如果先染前者，那么有：<span
+class="math inline">\(x+2y+3z&lt;z+2x+3y\)</span> ，即 <span
+class="math inline">\(\dfrac{x+y}{2}&gt;z\)</span>。</p>
+<p>我们发现 这两项都是平均值的形式，并且我们进一步推广，可以发现一组点
+<span class="math inline">\(A\)</span> 比一组点 <span
+class="math inline">\(B\)</span></p>
+<p>先染，要满足 <span
+class="math inline">\(\dfrac{sumval_A}{|A|}&gt;\dfrac{sumval_B}{B}\)</span>。</p>
+<p>所以我们如果在现有的点中得出了某一组点要先染，我们就可以把他合并到他父亲上，然后变成一个大点。</p>
+<p>一直合并之后，我们发现答案不是很好求，所以我们可以考虑在合并的过程中计算答案。</p>
+<h2 id="acwing-91.-最短哈密尔顿路径">Acwing 91. 最短哈密尔顿路径</h2>
+<p>考虑到 <span class="math inline">\(n\leq 20\)</span>，所以记 <span
+class="math inline">\(f_{S,i}\)</span>
+表示经过了的点的集合与目前所在的点，<span
+class="math inline">\(O(2^n\times n^2)\)</span> 转移即可。</p>
+<h2 id="acwing-120.-防线">Acwing 120. 防线</h2>
+<p>考虑到只有一位是奇数，那么在这一位之前所有的前缀和都是偶数，在这一位之后的所有前缀和都是奇数，一看到这种
+<code>000001111</code>
+的形式，就要想到二分，而我们判断一段前缀内的被等差数列覆盖的个数总和是很好求的，复杂度
+<span class="math inline">\(O(n)\)</span>，所以加上二分总复杂度为 <span
+class="math inline">\(O(n\log n)\)</span>。</p>
+<h2 id="acwing-123.-士兵">Acwing 123. 士兵</h2>
+<p>首先注意到每次操作会让某一个 <span class="math inline">\(x\)</span>
+或某一个 <span class="math inline">\(y\)</span> 加一或者减一，我们考虑将
+<span class="math inline">\(x\)</span>，<span
+class="math inline">\(y\)</span> 分开来看，因为 他们之间没有影响。</p>
+<p>最终要求 <span class="math inline">\(y\)</span> 相同，<span
+class="math inline">\(x\)</span>
+相邻，首先算使某一个数列变相同的办法就是直接排序之后算中位数，但是这个相邻比较难搞，所以我们直接排序了之后在下标为
+<span class="math inline">\(i\)</span> 的数减去 <span
+class="math inline">\(i\)</span>，然后转换成变成相同，但是注意这之前要先排序，不然不会最优。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
     
@@ -259,14 +314,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/10/14/2023-10-13-%E6%A8%A1%E6%8B%9F%E8%B5%9B/" rel="prev" title="2023/10/13 模拟赛">
-                  <i class="fa fa-angle-left"></i> 2023/10/13 模拟赛
+                <a href="/2023/10/14/%E5%85%B3%E4%BA%8E%E8%B5%9B%E6%97%B6%E6%9A%B4%E5%8A%9B%E6%89%93%E6%B3%95%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/" rel="prev" title="关于赛时暴力打法的一些总结">
+                  <i class="fa fa-angle-left"></i> 关于赛时暴力打法的一些总结
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/10/15/2023-10-15-%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/" rel="next" title="2023/10/15 刷题记录">
-                  2023/10/15 刷题记录 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
